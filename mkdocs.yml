@@ -1,6 +1,6 @@
-site_name: Diplomado en Aplicaciones asistidas por IA
-site_description: Diplomado en Aplicaciones asistidas por IA
-site_author: Institución Universitaria Digital de Antioquia
+site_name: Principios de Inteligencia Artifical
+site_description: Notas para el curso de Principios de Inteligencia Artificial
+site_author: Juan Camilo Macias, Institución Universitaria Digital de Antioquia
 site_url: https://introsoft-iud.github.io/Diplomado_IA_IUDigital/ 
 
 theme:
@@ -73,6 +73,7 @@ extra_css:
 
 nav:
   - Presentación del curso: index.md
-  - Módulo 1: Unidad 1/modulo1.md
-  - Módulo 2: Unidad2/modulo2.md
-  - Módulo 3: Unidad3/modulo3.md
+  - Deep Learning: DeepLearing/deeplearnig.md  
+  - Módulo 2: Unidad 1/modulo1.md
+  - Módulo 3: Unidad2/modulo2.md
+  - Módulo 4: Unidad3/modulo3.md

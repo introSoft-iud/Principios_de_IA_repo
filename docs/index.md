@@ -10,9 +10,10 @@ Nombre del curso: Diplomado en construcción de Aplicaciones Asistidas por IA
 
 
 -->
-# Diplomado en construcción de Aplicaciones Asistidas por IA
+# Notas para el curso Principios de Inteligencia Artificial
 
-![Banner del curso](assets/images/Banner.jpg)
+![Banner del curso](assets/images/Banner.png)
+
 
 <!--
 *********           PRELIMINARES  *****************************
@@ -41,15 +42,12 @@ Finaliza con un párrafo de cierre en el cual motives al estudiante a realizar e
 
 
 -->
-Bienvenidos al diplomado en construcción de aplicaciones asistidas por modelos de lenguaje de la Institución Universitaria Digital de Antioquia.
 
 Aunque la inteligencia artificial ha existido como un campo exitoso y prometedor entre los expertos durante varias décadas, la llegada de capacidades computacionales más avanzadas —ofrecidas por las GPU modernas— y las habilidades demostradas con el lanzamiento de ChatGPT fueron una gran sorpresa para muchos.
 
 No está del todo claro cómo este "pequeño" avance en la escala de los modelos pudo desencadenar la gran cantidad de aplicaciones asistidas por IA que estamos viendo explotar cada semana. Lo que sí es claro es que el campo de la ingeniería de software está siendo revolucionado, y que el nuevo paradigma de construcción de software ya no consiste en los tradicionales flujos de ejecución, sino que la nueva ingeniería de sistemas debe integrar a los LLM en dichos flujos.
 
-Hemos diseñado este diplomado para introducirte a este nuevo paradigma. Este curso está basado en LangChain, el framework más popular de la actualidad para interactuar con las APIs de los principales modelos de lenguaje.
-
-En el módulo 1 comenzarás por aprender a crear instrucciones reutilizables para los LLM, los llamados `prompt templates`, luego verás cómo encadenar estas instrucciones a través de las cadenas usando  el Lenguaje de Expresión de LangChain (LCEL). Aprenderás a especificar el formato de salida de tus cadenas de ejecución mediante los `output parsers`. A continuación, en el módulo 2, crearás tus primeros chatbots y aprenderás a gestionar sus memorias. Como ejercicio práctico, implementarás un chatbot asistente de un médico que carga en su memoria la historia clínica de los pacientes. Finalmente, en el módulo, estarás preparado para incorporar los componentes de los dos módulos anteriores junto con loaders de documentos, retrievers y bases de datos vectoriales, para crear y desplegar un sistema RAG sobre documentos en PDF, de manera que podrás conversar con tus archivos PDF.
+Hemos diseñado este curso para introducirte a este nuevo paradigma. Este curso está basado en LangChain, el framework más popular de la actualidad para interactuar con las APIs de los principales modelos de lenguaje.
 
 <!--
 
