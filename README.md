@@ -56,9 +56,9 @@ mkdocs build
 
 ### Sitio Desplegado
 
-El sitio ha sido desplegado y está disponible en la siguiente URL:
+El sitio ha sido desplegado y está disponible en la siguiente 
 
-[https://introsoft-iud.github.io/Diplomado_IA_IUDigital/Unidad%201/](https://introsoft-iud.github.io/Diplomado_IA_IUDigital/Unidad%201/)
+[URL](https://introsoft-iud.github.io/Principios_de_IA_repo/)
 
 <!-- Para desplegar uso 
 
