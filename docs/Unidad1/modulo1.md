@@ -356,7 +356,6 @@ LangChain proporciona una variedad de herramientas que permiten construir aplica
 - **Output Parsers (Parsers de Salida)**  
   Utilizados para estructurar y formatear las respuestas del modelo. Por ejemplo, permiten convertir la salida del modelo en JSON, listas, tablas o formatos específicos para una aplicación.
 
-REEMPLAZAR IMAGEN POR ESTA: https://drive.google.com/file/d/1oCSWBu03JBg1nWFZIRJBfshsllp0ozJ1/view?usp=drive_link
 ![Logo de LangChain](../assets/images/langchain_tools.png){ width="600" .center }
 
 _<div align="center">Ecosistema de herramientas de **LangChain**.  
