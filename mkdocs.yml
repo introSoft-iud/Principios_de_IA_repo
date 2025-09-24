@@ -1,7 +1,8 @@
 site_name: Principios de Inteligencia Artifical
 site_description: Notas para el curso de Principios de Inteligencia Artificial
 site_author: Juan Camilo Macias, Institución Universitaria Digital de Antioquia
-site_url: https://introsoft-iud.github.io/Diplomado_IA_IUDigital/ 
+site_url: https://introsoft-iud.github.io/Principios_de_IA_repo/
+
 
 theme:
   name: material
@@ -73,7 +74,7 @@ extra_css:
 
 nav:
   - Presentación del curso: index.md
-  - Deep Learning: DeepLearing/deeplearnig.md  
-  - Módulo 2: Unidad 1/modulo1.md
-  - Módulo 3: Unidad2/modulo2.md
-  - Módulo 4: Unidad3/modulo3.md
+  - Deep Learning: DeepLearning/deeplearning.md
+  - Templates y Output Parsers: Unidad1/modulo1.md
+  - Cadenas y memoria: Unidad2/modulo2.md
+  - Cargadores de Documentos: Unidad3/modulo3.md
