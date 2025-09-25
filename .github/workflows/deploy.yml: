@@ -1,13 +1,9 @@
 name: Build & Deploy MkDocs to GitHub Pages
 
+
 on:
   push:
     branches: [ main ]
-    paths:
-      - "docs/**"
-      - "mkdocs.yml"
-      - "requirements.txt"
-      - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
 permissions:
