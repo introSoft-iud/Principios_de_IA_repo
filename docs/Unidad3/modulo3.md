@@ -48,7 +48,7 @@ El uso efectivo de metadatos puede mejorar significativamente la capacidad de tu
 
 ## Categorías y ejemplos de cargadores de documentos
 
-LangChain ofrece un vasto ecosistema de cargadores de documentos, ¡actualmente más de 80, y la com sigue añadiendo más! Exploremos algunos:
+LangChain ofrece un vasto ecosistema de cargadores de documentos, ¡actualmente más de 80! y sigue añadiendo más. Exploremos algunos:
 
 ### Cargadores Basados en Archivos:
 Estos cargadores leen datos directamente de archivos. Vemos algunos:
@@ -194,7 +194,7 @@ chunks = partition_pdf(
     strategy="hi_res",                     # Necesario para inferir tablas
 
     extract_image_block_types=["Image"],   # Agregar 'Table' para extraer imágenes de tablas
-    # image_output_dir_path=output_path,   # Si es None, las imágenes y tablas se guardarán en base64
+    # image_output_dir_path=output_path,   # Si es None, las imágenes y tablas se guardarán en base64 en memoria
 
     extract_image_block_to_payload=True,   # Si es True, extraerá base64 para uso en API
 
@@ -312,6 +312,7 @@ def display_base64_image(base64_code):
     image_data = base64.b64decode(base64_code)
     display(Image(data=image_data))
 
+images = get_images_base64(chunks)
 display_base64_image(images[0])
 ```
 
