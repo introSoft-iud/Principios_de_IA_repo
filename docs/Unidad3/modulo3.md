@@ -946,6 +946,85 @@ Ahora podemos preguntar algo sobre el contenido del PDF:
     --------------------------------------------------
     ```
 
+## Desplegando mi RAG con Gradio
+
+Gradio de Hugging Face es una herramienta poderosa para crear interfaces de usuario interactivas para modelos de aprendizaje automático. Para usar Gradio, lo instalaremos usando pip:
+
+```bash
+pip install gradio transformers torch
+```
+
+Una vez instalado, crearemos nuestra primera aplicación. Generaremos un archivo con el nombre `app1.py` cuyo contenido es el siguiente código:
+
+```python
+import gradio as gr
+
+def analyze_sentiment(sentence):
+    if "good" in sentence:
+        return "positive"
+    elif "bad" in sentence:
+        return "negative"
+    else:
+        return "neutral"
+
+app = gr.Interface(fn=analyze_sentiment, inputs="text", outputs="label")
+
+app.launch()
+```
+
+A continuación, ejecutamos la aplicación con el siguiente comando:
+
+```bash
+python app1.py
+```
+La salida se presenta en la imagen.
+![alt text](image-2.png)
+
+Gradio genera automáticamente un diseño de interfaz predeterminado que incluye:
+
+- **Widget de entrada**: Un cuadro de texto, ya que se especificó `inputs="text"`.
+- **Widget de salida**: Una etiqueta, ya que se especificó `outputs="label"`.
+- **Botones de control** para la interacción básica del usuario:
+  - **Submit**: Llama a la función que proporcionaste (`analyze_sentiment`).
+  - **Clear**: Restablece los componentes de entrada y salida.
+  - **Flag**: Permite al usuario marcar un ejemplo (para retroalimentación o depuración).
+
+Estos botones son parte de la interfaz de usuario predeterminada de Gradio; no necesitas definirlos manualmente a menos que desees personalizarlos o eliminarlos.
+
+# Usando Blocks
+
+Si deseas eliminar tanto "Clear" como "Flag" y gestionar tus propios botones, cambia a la API de Blocks:
+
+```python
+import gradio as gr
+
+def analyze_sentiment(sentence):
+   if "good" in sentence:
+       return "positive"
+   elif "bad" in sentence:
+       return "negative"
+   else:
+       return "neutral"
+
+with gr.Blocks() as demo:
+    gr.Markdown("# App de Sentimiento")
+    with gr.Row():
+        txt = gr.Textbox(lines=2, placeholder="Ingresa texto")
+        btn = gr.Button("Analizar")
+    out = gr.Textbox(label="Resultado")
+
+    btn.click(analyze_sentiment, inputs=txt, outputs=out)
+
+demo.launch(share=True)
+```
+
+Esto te da control total: solo un botón, y tú decides exactamente qué hace.
+
+![alt text](image-3.png)
+
+
+
+
 ¡Felicidades por llegar hasta el final del módulo y del curso! Has aprendido a integrar plantillas de prompt con cadenas y parsers de salida, implementaste cadenas con memoria y, finalmente, has practicado cómo dividir documentos en fragmentos, almacenar embeddings de los fragmentos en una base de datos vectorial y realizar RAG sobre esta base de datos. Te invito a realizar la [actividad de aprendizaje](#evidencia-de-aprendizaje), donde crearás y desplegarás tu aplicación RAG siguiendo los pasos que acabas de estudiar.
 
 ## Glosario
