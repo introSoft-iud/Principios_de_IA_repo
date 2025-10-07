@@ -752,23 +752,21 @@ relying entirely on an attention mechanism to draw global dependencies between i
 Metadatos: {'page': 1, 'page_label': '2', 'source': '.content/attention.pdf'}
 --------------------------------------------------
 Resultado 2:
-but
-its
-application
-should
-be
-just
--
-this
-is
-what
-we
-are
-missing
-,
-in
-my
-...
+tion models in various tasks, allowing modeling of dependencies without regard to their distance in
+the input or output sequences [2, 19]. In all but a few cases [27], however, such attention mechanisms
+are used in conjunction with a recurrent network.
+In this work we propose the Transformer, a model architecture eschewing recurrence and instead
+relying entirely on an attention mechanism to draw global dependencies between input and output.
+Metadatos: {'page': 1, 'page_label': '2', 'source': '.content/attention.pdf'}
+--------------------------------------------------
+Resultado 3:
+tion models in various tasks, allowing modeling of dependencies without regard to their distance in
+the input or output sequences [2, 19]. In all but a few cases [27], however, such attention mechanisms
+are used in conjunction with a recurrent network.
+In this work we propose the Transformer, a model architecture eschewing recurrence and instead
+relying entirely on an attention mechanism to draw global dependencies between input and output.
+Metadatos: {'source': '.content/attention.pdf', 'page_label': '2', 'page': 1}
+--------------------------------------------------
 ```
 
 ### Persistencia de la Vectorstore
