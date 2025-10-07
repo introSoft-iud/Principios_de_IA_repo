@@ -704,7 +704,8 @@ print(f"Primeros 5 valores: {sample_embedding[:5]}")
 ```bash
 Dimensión del embedding: 1536
 Primeros 5 valores: [-0.012028052471578121, 0.01199324894696474, 0.017206797376275063, -0.027745263651013374, -0.0014739236794412136]
-`### Creando la base de datos
+```
+### Creando la base de datos
 
 Guardaremos los fragmentos y sus embeddings generados por OpenAI en una vectorstore de `Chroma`.
 
