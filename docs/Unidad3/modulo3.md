@@ -1021,6 +1021,42 @@ Esto te da control total: solo un botón, y tú decides exactamente qué hace.
 
 ![alt text](image-3.png)
 
+# Cómo Usar Ollama para Ejecutar Modelos de IA Localmente en Google Colab
+
+## Introducción
+
+Ollama es una herramienta de código abierto que permite ejecutar modelos de lenguaje grandes (LLMs) de manera local en tu máquina, sin depender de servicios en la nube pagos. Sin embargo, muchos usuarios no cuentan con hardware potente (como GPUs) en sus computadoras locales. Aquí es donde entra Google Colab: una plataforma gratuita de Google que proporciona acceso a entornos de ejecución en la nube, incluyendo GPUs limitadas en la versión gratuita.
+
+En esta lección, aprenderemos a configurar y ejecutar Ollama en Google Colab. Esto simula un entorno "local" en la nube, permitiendo correr modelos como Llama o Mistral sin costo adicional. Además, incluiremos cómo exponer el servidor de Ollama a través de herramientas como Ngrok o Pinggy para accederlo desde tu máquina local o aplicaciones externas.
+
+> **Nota:** Google Colab tiene límites de uso (por ejemplo, sesiones de 12 horas y cuotas de GPU). Asegúrate de cumplir con las políticas de Google.
+
+## Prerrequisitos
+
+- Una cuenta de Google (para acceder a Colab).
+- Conocimientos básicos de Python y comandos de terminal.
+- Opcional: Cuenta gratuita en Ngrok (para exponer el puerto) o usa Pinggy (sin cuenta requerida).
+- Cambia el runtime de Colab a GPU: Ve a Runtime > Change runtime type > T4 GPU (disponible en el tier gratuito).
+
+## Paso 1: Crear un Nuevo Notebook en Google Colab
+
+1. Ve a [colab.research.google.com](https://colab.research.google.com).
+2. Crea un nuevo notebook (Archivo > Nuevo notebook).
+3. Configura el runtime con GPU como se mencionó arriba.
+
+## Paso 2: Instalar Dependencias Básicas
+
+Ejecuta las siguientes celdas en tu notebook para preparar el entorno. Usaremos `colab-xterm` para un terminal interactivo, aunque hay métodos alternativos sin él.
+
+=== "Código"
+    ```python
+    # Instalar colab-xterm
+    !pip install colab-xterm
+    %load_ext colabxterm
+    ```
+
+Con estos pasos iniciales, estarás listo para continuar con la configuración de Ollama en Google Colab.
+
 
 
 
