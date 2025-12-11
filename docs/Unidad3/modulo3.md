@@ -1025,9 +1025,7 @@ Esto te da control total: solo un botón, y tú decides exactamente qué hace.
 
 ## Introducción
 
-Ollama es una herramienta de código abierto que permite ejecutar modelos de lenguaje grandes (LLMs) de manera local en tu máquina, sin depender de servicios en la nube pagos. Sin embargo, muchos usuarios no cuentan con hardware potente (como GPUs) en sus computadoras locales. Aquí es donde entra Google Colab: una plataforma gratuita de Google que proporciona acceso a entornos de ejecución en la nube, incluyendo GPUs limitadas en la versión gratuita.
-
-En esta lección, aprenderemos a configurar y ejecutar Ollama en Google Colab. Esto simula un entorno "local" en la nube, permitiendo correr modelos como Llama o Mistral sin costo adicional. Además, incluiremos cómo exponer el servidor de Ollama a través de herramientas como Ngrok o Pinggy para accederlo desde tu máquina local o aplicaciones externas.
+Ollama es una herramienta de código abierto que permite ejecutar modelos de lenguaje grandes (LLMs) de manera local en tu máquina, sin depender de servicios en la nube pagos. Sin embargo, muchos usuarios no cuentan con hardware potente (como GPUs) en sus computadoras locales si ese es tu caso te muestro una manera de experimentar ollama en Google Colab. Lo usaremos para  simular un entorno "local" en la nube, permitiendo correr modelos como Llama o Mistral sin costo adicional. 
 
 > **Nota:** Google Colab tiene límites de uso (por ejemplo, sesiones de 12 horas y cuotas de GPU). Asegúrate de cumplir con las políticas de Google.
 
@@ -1056,6 +1054,48 @@ Ejecuta las siguientes celdas en tu notebook para preparar el entorno. Usaremos 
     ```
 
 Con estos pasos iniciales, estarás listo para continuar con la configuración de Ollama en Google Colab.
+
+
+Esto instala una extensión que permite abrir un terminal dentro de Colab.
+
+## Paso 3: Abrir el Terminal y Instalar Ollama
+
+Ejecuta esta celda para abrir un terminal:
+
+```python
+%xterm
+```
+
+Dentro del terminal que se abre, ejecuta los siguientes comandos uno por uno:
+
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+Esto descarga e instala Ollama automáticamente.
+
+Luego, inicia el servidor de Ollama en segundo plano:
+
+```bash
+ollama serve &
+```
+
+## Paso 4: Descargar y Ejecutar un Modelo
+
+Aún en el terminal, descarga un modelo ligero (por ejemplo, Llama 3.2 de 3B parámetros para evitar límites de memoria):
+
+```bash
+ollama pull llama3.2
+```
+
+Para probarlo directamente en el terminal:
+
+```bash
+ollama run llama3.2
+```
+
+Escribe un prompt como "Hola, ¿qué es Ollama?" y presiona Enter. Ollama responderá usando el modelo.
+
 
 
 
