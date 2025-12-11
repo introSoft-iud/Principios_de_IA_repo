@@ -1056,6 +1056,46 @@ Ejecuta las siguientes celdas en tu notebook para preparar el entorno. Usaremos 
     ```
 
 Con estos pasos iniciales, estarás listo para continuar con la configuración de Ollama en Google Colab.
+Esto instala una extensión que permite abrir un terminal dentro de Colab.
+
+## Paso 3: Abrir el Terminal y Instalar Ollama
+
+Ejecuta esta celda para abrir un terminal:
+
+```python
+%xterm
+```
+
+Dentro del terminal que se abre, ejecuta los siguientes comandos uno por uno:
+
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+Esto descarga e instala Ollama automáticamente.
+
+Luego, inicia el servidor de Ollama en segundo plano:
+
+```bash
+ollama serve &
+```
+
+## Paso 4: Descargar y Ejecutar un Modelo
+
+Aún en el terminal, descarga un modelo ligero (por ejemplo, Llama 3.2 de 3B parámetros para evitar límites de memoria):
+
+```bash
+ollama pull llama3.2
+```
+
+Para probarlo directamente en el terminal:
+
+```bash
+ollama run llama3.2
+```
+
+Escribe un prompt como "Hola, ¿qué es Ollama?" y presiona Enter. Ollama responderá usando el modelo.
+
 
 
 
